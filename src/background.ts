@@ -1,12 +1,6 @@
 // background.ts
 // 백그라운드에서 실행되는 서비스 워커
 
-// 확장 프로그램 아이콘 클릭 시 사이드 패널 열기
-chrome.action.onClicked.addListener((tab) => {
-  // 사이드 패널 열기
-  chrome.sidePanel.open({ tabId: tab.id });
-});
-
 // 슬랙과 노션 API 통신 처리
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
   if (message.type === 'SEND_TO_SLACK') {

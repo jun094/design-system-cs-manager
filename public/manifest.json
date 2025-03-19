@@ -3,10 +3,10 @@
 	"name": "디자인 시스템 CS 도우미",
 	"version": "1.0.0",
 	"description": "디자인 시스템 라이브러리 CS 관리를 위한 크롬 확장 프로그램",
-	"side_panel": {
-		"default_path": "index.html"
+	"action": {
+		"default_popup": "index.html"
 	},
-	"permissions": ["activeTab", "scripting", "storage", "sidePanel"],
+	"permissions": ["activeTab", "scripting", "storage"],
 	"background": {
 		"service_worker": "background.js",
 		"type": "module"
