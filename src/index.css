@@ -1,0 +1,22 @@
+:root {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  min-height: 500px;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+} 

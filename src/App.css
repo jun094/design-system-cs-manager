@@ -1,0 +1,68 @@
+.app {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 16px;
+}
+
+.tabs button {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.tabs button.active {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  font-weight: 500;
+}
+
+.content {
+  min-height: 300px;
+}
+
+/* 사이드 패널용 스타일 */
+@media (max-width: 400px) {
+  .app {
+    padding: 8px;
+  }
+  
+  .header h1 {
+    font-size: 18px;
+  }
+  
+  .tabs button {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .form-group label {
+    font-size: 12px;
+  }
+  
+  .screenshot-preview {
+    max-height: 150px;
+  }
+} 
