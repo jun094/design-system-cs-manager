@@ -1,6 +1,11 @@
-import "./App.css";
+import { Container, Button } from "@radix-ui/themes";
 
-function App() {	return <></>;
+function App() {
+	return (
+		<Container size="1">
+			<Button>button</Button>
+		</Container>
+	);
 }
 
 export default App;
